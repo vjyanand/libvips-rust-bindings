@@ -15802,7 +15802,7 @@ pub fn thumbnail_buffer_with_opts(
 
         let vips_op_response = bindings::vips_thumbnail_buffer(
             buffer_in,
-            buffer.len() as u64,
+            buffer.len() as i32,
             &mut out_out,
             width_in,
             option_string_in_name.as_ptr(),
